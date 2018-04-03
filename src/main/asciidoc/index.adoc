@@ -1,0 +1,43 @@
+= Person-service Getting Started Guide
+Guillaume Fabbi
+
+[introduction]
+= Introduction
+
+Person-service is RESTful microservice designed to help you to manage the persons inside your application.
+
+
+[[resouces]]
+= Resources
+
+[[resources-person]]
+== Person
+The Person resource is used to create, update, delete and find one (or many) person.
+
+[[resources-person-list]]
+=== Listing persons
+
+A `GET` request lists all persons in the application.
+
+.fields
+include::{snippets}/persons/list/response-fields.adoc[]
+
+.request
+include::{snippets}/persons/list/curl-request.adoc[]
+
+.response
+include::{snippets}/persons/list/response-body.adoc[]
+
+[[resources-person-find-one]]
+=== Listing persons
+
+A `GET` request retrieves one person by its unique id.
+
+.fields
+include::{snippets}/persons/findOne/response-fields.adoc[]
+
+.request
+include::{snippets}/persons/findOne/curl-request.adoc[]
+
+.response
+include::{snippets}/persons/findOne/response-body.adoc[]
